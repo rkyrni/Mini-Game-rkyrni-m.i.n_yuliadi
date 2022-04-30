@@ -1,9 +1,10 @@
 import './App.css';
+import Landing from './pages/landing/Landing';
 
 const App = () => {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Mini Game Kita</h1>
+      <Landing />
     </div>
   );
 };
