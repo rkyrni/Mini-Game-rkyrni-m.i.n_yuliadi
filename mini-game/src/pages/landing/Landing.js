@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './Landing.css';
 import IconLanding from '../../assets/img/icon-landing.png';
 import IconText from '../../assets/img/text-landing.png';
+import {Link} from 'react-router-dom';
 
 const Landing = () => {
   const [animasi, setAnimasi] = useState(true);
@@ -26,7 +27,9 @@ const Landing = () => {
           </figure>
           <div className={animasi ? 'animasi btn-icon-play' : 'btn-icon-play'}>
             <button>
-              <img src={`${IconLanding}`} alt="icon-Landing" />
+              <Link to={'/game'}>
+                <img src={`${IconLanding}`} alt="icon-Landing" />
+              </Link>
             </button>
           </div>
         </div>
