@@ -6,7 +6,7 @@ const Layout = (props) => {
   return (
     <>
       <div
-        className={`w-full min-h-screen h-full flex flex-col justify-center items-center text-gray-600`}>
+        className={`w-full min-h-[95vh] h-full flex flex-col justify-center items-center text-gray-600`}>
         <Navigation />
         {props.children}
       </div>
