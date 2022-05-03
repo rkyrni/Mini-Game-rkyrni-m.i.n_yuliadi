@@ -7,7 +7,7 @@ const Navigation = () => {
   const {level} = useContext(DataContext);
   return (
     <div
-      className={`w-full h-20 bg-gray-900 text-gray-200 font-medium text-base shadow-md shadow-gray-400`}>
+      className={`w-full h-20 absolute top-0 bg-gray-900 text-gray-200 font-medium text-base shadow-md shadow-gray-400`}>
       <div className={`flex items-center justify-between w-full h-full p-3`}>
         <div className={`flex gap-3 justify-center items-start`}>
           <Link

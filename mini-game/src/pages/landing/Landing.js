@@ -27,7 +27,7 @@ const Landing = () => {
           </figure>
           <div className={animasi ? 'animasi btn-icon-play' : 'btn-icon-play'}>
             <button>
-              <Link to={'/game'}>
+              <Link to={'/games'}>
                 <img src={`${IconLanding}`} alt="icon-Landing" />
               </Link>
             </button>
