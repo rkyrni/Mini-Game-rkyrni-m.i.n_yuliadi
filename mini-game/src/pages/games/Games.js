@@ -11,7 +11,7 @@ const Games = () => {
   const {resetLevel} = FunctionHandler();
 
   return (
-    <div className="h-[40rem] w-[60rem] bg-gray-300 text-5xl flex flex-col items-center justify-center relative p-5">
+    <div className="h-[40rem] w-[60rem] bg-gray-300 text-5xl flex flex-col items-center justify-center relative p-5 shadow-2xl">
       {life <= 0 && <GameOver />}
       {life > 0 && (
         <>
