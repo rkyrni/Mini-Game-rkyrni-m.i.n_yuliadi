@@ -1,0 +1,49 @@
+.container-landing {
+  background-image: url(../../assets/img/background-landing.png);
+  min-height: 100vmin;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: rgb(225, 225, 225);
+}
+
+.btn-icon-play {
+  position: absolute;
+  left: 40%;
+  top: 300px;
+  transition: 2s;
+  /* background-color: rgb(0, 0, 0);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 10px 15px 15px -8px rgba(0, 0, 0, 0.437); */
+}
+
+.animasi {
+  transform: rotateY(360deg);
+  /* background-color: aqua; */
+}
+
+/* ============== RESPOSNSIV ================ */
+@media screen and (max-width: 572px) {
+  .container-landing {
+    background-image: none;
+    overflow-x: hidden;
+  }
+  .btn-icon-play {
+    width: 200px;
+    top: 50%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-landing {
+    background-image: none;
+  }
+  .btn-icon-play {
+    width: 100px;
+    left: 20%;
+    top: 40%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+}
