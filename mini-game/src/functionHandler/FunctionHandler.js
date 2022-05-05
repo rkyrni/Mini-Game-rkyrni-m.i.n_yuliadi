@@ -2,7 +2,8 @@ import {useContext} from 'react';
 import {DataContext} from '../state management/StateManagement';
 
 const FunctionHandler = () => {
-  const {level, setLevel, life, setLife, setLevel2Condition} = useContext(DataContext);
+  const {level, setLevel, life, setLife, setLevel2Condition, setColorIndex} =
+    useContext(DataContext);
 
   const correctAnswer = () => {
     setLevel(level + 1);
@@ -31,6 +32,7 @@ const FunctionHandler = () => {
   const resetLevel = () => {
     setLevel(1);
     setLife(3);
+    setColorIndex(0);
 
     // ==== Conditional Level 2 ===
     if (level === 2) setLevel2Condition('');
