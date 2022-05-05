@@ -5,6 +5,7 @@ import Level2 from './component/Level2';
 import FunctionHandler from '../../functionHandler/FunctionHandler';
 import LifeComponent from './component/LifeComponent';
 import GameOver from './component/GameOver';
+import Level3 from './component/Level3';
 
 const Games = () => {
   const {level, life} = useContext(DataContext);
@@ -17,7 +18,8 @@ const Games = () => {
         <>
           {level === 1 && <Level1 />}
           {level === 2 && <Level2 />}
-          {level > 2 && <span>Kamu telah menyelesaikan semua level</span>}
+          {level === 3 && <Level3 />}
+          {level > 3 && <span>Kamu telah menyelesaikan semua level</span>}
           <button
             onClick={resetLevel}
             className="absolute text-lg font-medium flex bottom-3 right-3 items-center justify-center">
