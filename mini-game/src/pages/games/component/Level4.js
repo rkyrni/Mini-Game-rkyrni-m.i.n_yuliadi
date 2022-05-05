@@ -11,7 +11,6 @@ const Level4 = () => {
   const [ungu, setUngu] = useState(false);
   const [biru, setBiru] = useState(false);
   const [gagal, setGagal] = useState(false);
-  // const [berhasil, setBerhasil] = useState(false);
   const handleMerah = () => {
     setmerah(true);
     setGagal(false);
@@ -22,11 +21,6 @@ const Level4 = () => {
       setKuning(true);
       setGagal(false);
     } else {
-      // setmerah(true);
-      // setKuning(true);
-      // setHijau(true);
-      // setUngu(true);
-      // setBiru(true);
       setGagal(true);
       wrongAnswer();
     }
@@ -37,11 +31,6 @@ const Level4 = () => {
       setHijau(true);
       setGagal(false);
     } else {
-      // setmerah(true);
-      // setKuning(true);
-      // setHijau(true);
-      // setUngu(true);
-      // setBiru(true);
       setGagal(true);
       wrongAnswer();
     }
@@ -52,11 +41,6 @@ const Level4 = () => {
       setUngu(true);
       setGagal(false);
     } else {
-      // setmerah(true);
-      // setKuning(true);
-      // setHijau(true);
-      // setUngu(true);
-      // setBiru(true);
       setGagal(true);
       wrongAnswer();
     }
@@ -68,11 +52,6 @@ const Level4 = () => {
       setGagal(false);
       setBiru(true);
     } else {
-      // setmerah(true);
-      // setKuning(true);
-      // setHijau(true);
-      // setUngu(true);
-      // setBiru(true);
       setGagal(true);
       wrongAnswer();
     }
@@ -81,7 +60,7 @@ const Level4 = () => {
   return (
     <div className="text-center grid gap-12">
       <span className="text-7xl pb-20 text-center font-bold"> Klik warna sesuai urutannya!</span>
-      <ul className="flex gap-5 justify-self-center">
+      <ul className="flex gap-5 justify-self-center transition-all">
         <li
           onClick={handleHijau}
           className={hijau ? 'hidden' : 'p-6 h-6 bg-green-500 cursor-pointer'}></li>
@@ -99,7 +78,6 @@ const Level4 = () => {
           className={kuning ? 'hidden' : 'p-6 h-6 bg-yellow-500 cursor-pointer'}></li>
       </ul>
       {gagal && <AlertLevel2 text="Urutan salah" />}
-      {/* {berhasil && <AlertLevel2 text="KAMU Berhasil" />} */}
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Level2 = () => {
   useEffect(() => {
     setTimeout(() => {
       setColorIndex(colorIndex + 1);
-    }, 2000);
+    }, 1800);
   });
   return (
     <>
