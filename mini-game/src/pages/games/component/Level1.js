@@ -6,7 +6,7 @@ const Level1 = () => {
   return (
     <>
       <span className="text-7xl pb-20 font-bold">
-        Klik &nbsp;
+        Klik&nbsp;
         <span onClick={correctAnswer}>Mulai !!!</span>
       </span>
       <div className="flex flex-col gap-10">

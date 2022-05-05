@@ -7,7 +7,7 @@ const About = () => {
       <div className="flex items-center justify-center w-full h-full mt-24 gap-10">
         <CardAboutComponent
           name="Ricky Ramadani"
-          birthday="05 Januari 1999"
+          birthday="5 Januari 1999"
           address="Labuhanbatu Selatan, Sumatera Utara"
           instagram="https://www.instagram.com/rkyrni/"
           whatsapp="https://wa.link/u3lbke"
@@ -16,7 +16,7 @@ const About = () => {
         />
         <CardAboutComponent
           name="Muhammad Irfan Nugraha Y"
-          birthday="04 Agustus 1999"
+          birthday="4 Agustus 1999"
           address="Kintap, Kalimantan Selatan"
           instagram="https://www.instagram.com/m.i.n_yuliadi/"
           whatsapp="https://wa.link/oe83dr"
