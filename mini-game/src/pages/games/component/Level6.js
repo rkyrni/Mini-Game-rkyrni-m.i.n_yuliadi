@@ -21,7 +21,7 @@ const Level6 = () => {
     <>
       {!switc && (
         <>
-          <div className="w-full h-auto p-2 bg-black text-center flex flex-col gap-5 items-center justify-center relative">
+          <div className="w-full h-auto mt-7 mb-7 p-2 bg-black text-center flex flex-col gap-5 items-center justify-center relative">
             <span className="text-white">Perhatikan object dibawah!</span>
             <figure className="justify-self-center">
               <img className="w-full h-auto justify-self-center" src={`${Milea}`} alt="milea" />
@@ -32,8 +32,10 @@ const Level6 = () => {
       )}
       {switc && (
         <>
-          <span className="text-7xl pb-20 font-bold">Berapakah yang hilang?</span>
-          <div className="flex flex-col gap-10">
+          <span className="text-3xl xl:text-7xl pt-10 pb-10 xl:pb-20 font-bold">
+            Berapakah yang hilang?
+          </span>
+          <div className="flex flex-col gap-10 pb-10">
             <div className="flex gap-20">
               <button onClick={wrongAnswer} className="p-5 bg-gray-500 text-white">
                 A. 5

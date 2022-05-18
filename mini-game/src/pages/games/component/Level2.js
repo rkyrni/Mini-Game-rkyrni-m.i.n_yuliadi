@@ -14,29 +14,45 @@ const Level2 = () => {
   });
   return (
     <>
-      {colorIndex <= 4 && <span className="text-5xl pb-8">Ingat urutan warna dibawah ini !!</span>}
-      {colorIndex === 0 && <div className={`w-36 h-36 bg-red-500`}>&nbsp;</div>}
-      {colorIndex === 1 && <div className={`w-36 h-36 bg-yellow-500`}>&nbsp;</div>}
-      {colorIndex === 2 && <div className={`w-36 h-36 bg-green-500`}>&nbsp;</div>}
-      {colorIndex === 3 && <div className={`w-36 h-36 bg-purple-500`}>&nbsp;</div>}
-      {colorIndex === 4 && <div className={`w-36 h-36 bg-sky-500`}>&nbsp;</div>}
+      {colorIndex <= 4 && (
+        <span className="text-1xl xl:text-5xl pt-10 pb-8">Ingat urutan warna dibawah ini !!</span>
+      )}
+      {colorIndex === 0 && (
+        <div className={`w-20 xl:w-36 h-20 xl:h-36 mb-10 bg-red-500`}>&nbsp;</div>
+      )}
+      {colorIndex === 1 && (
+        <div className={`w-20 xl:w-36 h-20 xl:h-36 mb-10 bg-yellow-500`}>&nbsp;</div>
+      )}
+      {colorIndex === 2 && (
+        <div className={`w-20 xl:w-36 h-20 xl:h-36 mb-10 bg-green-500`}>&nbsp;</div>
+      )}
+      {colorIndex === 3 && (
+        <div className={`w-20 xl:w-36 h-20 xl:h-36 mb-10 bg-purple-500`}>&nbsp;</div>
+      )}
+      {colorIndex === 4 && (
+        <div className={`w-20 xl:w-36 h-20 xl:h-36 mb-10 bg-sky-500`}>&nbsp;</div>
+      )}
       {colorIndex > 4 && (
         <>
-          <span className="text-7xl pb-20 text-red-600 text-center font-bold">
+          <span className="text-3xl xl:text-7xl pb-10 xl:pb-20 pt-10 text-red-600 text-center font-bold">
             Siapa yang salah?
           </span>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 pb-10">
             <div className="flex gap-20">
               <button
                 onClick={wrongAnswerLevel2}
                 value={'A'}
-                className={level2Condition === 'C' ? 'hidden' : 'p-5 bg-gray-500 text-white'}>
+                className={
+                  level2Condition === 'C' ? 'hidden' : 'p-3 xl:p-5 bg-gray-500 text-white'
+                }>
                 A. Cowo
               </button>
               <button
                 onClick={wrongAnswerLevel2}
                 value={'B'}
-                className={level2Condition === 'C' ? 'hidden' : 'p-5 bg-gray-500 text-white'}>
+                className={
+                  level2Condition === 'C' ? 'hidden' : 'p-3 xl:p-5 bg-gray-500 text-white'
+                }>
                 B. Mantan
               </button>
             </div>
@@ -44,13 +60,15 @@ const Level2 = () => {
               <button
                 onClick={correctAnswerLevel2}
                 value={'C'}
-                className={'p-5 bg-gray-500 text-white'}>
+                className={'p-3 xl:p-5 bg-gray-500 text-white'}>
                 C. Saya
               </button>
               <button
                 onClick={wrongAnswerLevel2}
                 value={'D'}
-                className={level2Condition === 'C' ? 'hidden' : 'p-5 bg-gray-500 text-white'}>
+                className={
+                  level2Condition === 'C' ? 'hidden' : 'p-3 xl:p-5 bg-gray-500 text-white'
+                }>
                 D.Cewe
               </button>
             </div>

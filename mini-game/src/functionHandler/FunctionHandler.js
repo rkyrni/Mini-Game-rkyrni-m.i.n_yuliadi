@@ -2,8 +2,15 @@ import {useContext} from 'react';
 import {DataContext} from '../state management/StateManagement';
 
 const FunctionHandler = () => {
-  const {level, setLevel, life, setLife, setLevel2Condition, setColorIndex} =
-    useContext(DataContext);
+  const {
+    level,
+    setLevel,
+    life,
+    setLife,
+    setLevel2Condition,
+    setColorIndex,
+    setAnimationWrongAnswer
+  } = useContext(DataContext);
 
   const correctAnswer = () => {
     setLevel(level + 1);
@@ -14,6 +21,10 @@ const FunctionHandler = () => {
 
   const wrongAnswer = () => {
     setLife(life - 1);
+
+    if (life > 1) {
+      setAnimationWrongAnswer('border-2 border-red-600 bg-red-700 rotate-3');
+    }
   };
 
   const wrongAnswerLevel2 = (event) => {

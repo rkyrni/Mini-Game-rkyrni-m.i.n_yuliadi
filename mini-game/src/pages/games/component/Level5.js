@@ -40,7 +40,7 @@ const Level5 = () => {
       {!jawaban && (
         <>
           <div className="flex-row content-evenly text-center">
-            <ul className="text-2xl">
+            <ul className="text-2xl mt-7">
               <li>5 + 7 = 14</li>
               <li>7 + 7 = 16</li>
               <li>5 x 7 = 37</li>
@@ -50,7 +50,7 @@ const Level5 = () => {
             <span>Berapakah 5 x 5 = ?</span>
           </div>
           <div>
-            <form action="none" className="flex gap-10">
+            <form action="none" className="flex gap-10 mb-10">
               <input
                 type="number"
                 name="number"
@@ -70,7 +70,7 @@ const Level5 = () => {
             </form>
             <div
               className={
-                alert ? 'hidden' : 'bg-red-200 mt-2 py-2 px-4 text-xs text-red-600 rounded-sm'
+                alert ? 'hidden' : 'bg-red-200 mt-2 mb-5 py-2 px-4 text-xs text-red-600 rounded-sm'
               }>
               Jawaban salah
             </div>
@@ -79,8 +79,8 @@ const Level5 = () => {
       )}
       {jawaban && (
         <>
-          <span className="text-4xl pb-8 text-center">5 x 5 = 25</span>
-          <span className="text-2xl pb-8 text-center">
+          <span className="text-2xl xl:text-4xl pt-6 pb-5 xl:pb-8 text-center">5 x 5 = 25</span>
+          <span className="text-l xl:text-2xl pb-8 text-center">
             Yaps selamatt🥳🥳🥳 <br /> Konsisten dan percaya dirilah pada diri sendiri, <br />
             Jangan biarkan hal-hal disekitarmu yang sudah jelas salah dapat mempengaruhi dirimu,{' '}
             <br />{' '}
@@ -91,7 +91,7 @@ const Level5 = () => {
           </span>
           <button
             onClick={handleNextLevel}
-            className="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center text-sm py-2 px-4 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600 self-center">
+            className="inline-block mb-10 xl:mb-none rounded-sm font-medium border border-solid cursor-pointer text-center text-sm py-2 px-4 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600 self-center">
             Next Level
           </button>
         </>

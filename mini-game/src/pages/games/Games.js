@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {DataContext} from '../../state management/StateManagement';
 import Level1 from './component/Level1';
 import Level2 from './component/Level2';
@@ -9,13 +9,23 @@ import Level3 from './component/Level3';
 import Level4 from './component/Level4';
 import Level5 from './component/Level5';
 import Level6 from './component/Level6';
+import Level7 from './component/Level7';
 
 const Games = () => {
-  const {level, life} = useContext(DataContext);
+  const {level, life, animationWrongAnswer, setAnimationWrongAnswer} = useContext(DataContext);
   const {resetLevel} = FunctionHandler();
 
+  useEffect(() => {
+    if (animationWrongAnswer) {
+      setTimeout(() => {
+        setAnimationWrongAnswer('');
+      }, 300);
+    }
+  });
+
   return (
-    <div className="h-[40rem] w-[60rem] bg-gray-300 text-5xl flex flex-col items-center justify-center relative p-5 shadow-2xl mt-20">
+    <div
+      className={`h:-[20rem] xl:h-[40rem] xl:w-[60rem] w-[20rem] bg-gray-300 xl:text-5xl flex flex-col items-center justify-center relative p-5 shadow-2xl mt-20 ${animationWrongAnswer}`}>
       {life <= 0 && <GameOver />}
       {life > 0 && (
         <>
@@ -25,7 +35,8 @@ const Games = () => {
           {level === 4 && <Level4 />}
           {level === 5 && <Level5 />}
           {level === 6 && <Level6 />}
-          {level > 6 && <span>Kamu telah menyelesaikan semua level</span>}
+          {level === 7 && <Level7 />}
+          {level > 7 && <span>Kamu telah menyelesaikan semua level</span>}
           <button
             onClick={resetLevel}
             className="absolute text-lg font-medium flex bottom-3 right-3 items-center justify-center">

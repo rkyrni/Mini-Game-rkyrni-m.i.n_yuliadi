@@ -5,12 +5,12 @@ const Level3 = () => {
   const {correctAnswer, wrongAnswer} = FunctionHandler();
   return (
     <>
-      <span className="text-7xl text-center pb-20 font-medium">
+      <span className="text-3xl xl:text-7xl pt-10 pb-10 text-center xl:pb-20 font-medium">
         What's <span className=" font-bold">Capital</span> of &nbsp;
         <span onClick={correctAnswer}> I</span>
         <span>ndonesia ?</span>
       </span>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 pb-10">
         <div className="flex gap-20">
           <button onClick={wrongAnswer} className="p-5 bg-gray-500 text-white">
             A. Jakarta

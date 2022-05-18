@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardAboutComponent = (props) => {
   return (
-    <div className="flex flex-col p-10 justify-center items-start shadow-md shadow-gray-500 w-fit">
+    <div className="flex flex-col p-3 xl:p-10 justify-center items-start shadow-md shadow-gray-500 w-fit">
       <img className="w-[20rem] h-[20rem] " alt="" src={props.img_url} />
       <span className="pt-3">Name : {props.name} </span>
       <span>Birthday : {props.birthday} </span>

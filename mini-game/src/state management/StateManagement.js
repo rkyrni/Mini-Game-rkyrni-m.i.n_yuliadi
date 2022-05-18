@@ -7,6 +7,7 @@ export const ProviderContext = (props) => {
   const [life, setLife] = useState(3);
   const [level2Condition, setLevel2Condition] = useState('');
   const [colorIndex, setColorIndex] = useState(0);
+  const [animationWrongAnswer, setAnimationWrongAnswer] = useState('');
 
   return (
     <DataContext.Provider
@@ -18,7 +19,9 @@ export const ProviderContext = (props) => {
         level2Condition,
         setLevel2Condition,
         colorIndex,
-        setColorIndex
+        setColorIndex,
+        animationWrongAnswer,
+        setAnimationWrongAnswer
       }}>
       {props.children}
     </DataContext.Provider>

@@ -59,8 +59,11 @@ const Level4 = () => {
 
   return (
     <div className="text-center grid gap-12">
-      <span className="text-7xl pb-20 text-center font-bold"> Klik warna sesuai urutannya!</span>
-      <ul className="flex gap-5 justify-self-center transition-all">
+      <span className="text-2xl xl:text-7xl pt-10 pb-10 xl:pb-20 text-center font-bold">
+        {' '}
+        Klik warna sesuai urutannya!
+      </span>
+      <ul className="flex gap-3 xl:gap-5 justify-self-center transition-all pb-10">
         <li
           onClick={handleHijau}
           className={hijau ? 'hidden' : 'p-6 h-6 bg-green-500 cursor-pointer'}></li>

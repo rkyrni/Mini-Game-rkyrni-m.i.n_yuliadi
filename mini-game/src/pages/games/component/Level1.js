@@ -1,15 +1,15 @@
-import React from 'react';
 import FunctionHandler from '../../../functionHandler/FunctionHandler';
 
 const Level1 = () => {
   const {correctAnswer, wrongAnswer} = FunctionHandler();
+
   return (
     <>
-      <span className="text-7xl pb-20 font-bold">
+      <span className="text-3xl xl:text-7xl pb-10 pt-10 font-bold">
         Klik&nbsp;
         <span onClick={correctAnswer}>Mulai !!!</span>
       </span>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 pb-10">
         <div className="flex gap-20">
           <button onClick={wrongAnswer} className="p-5 bg-gray-500 text-white">
             A. mulai

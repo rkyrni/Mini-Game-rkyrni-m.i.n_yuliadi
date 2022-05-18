@@ -3,6 +3,7 @@ import './Landing.css';
 import IconLanding from '../../assets/img/icon-landing.png';
 import IconText from '../../assets/img/text-landing.png';
 import {Link} from 'react-router-dom';
+import '../../App.css';
 
 const Landing = () => {
   const [animasi, setAnimasi] = useState(true);
@@ -20,7 +21,7 @@ const Landing = () => {
 
   return (
     <>
-      <div className="container-landing bg-gray-100 w-full">
+      <div className="container-landing bg-gray-100 w-full h-screen">
         <div>
           <figure className="ml-[6rem]">
             <img src={`${IconText}`} alt="text" />

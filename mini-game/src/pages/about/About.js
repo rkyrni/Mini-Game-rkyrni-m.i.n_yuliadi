@@ -4,7 +4,7 @@ import CardAboutComponent from '../../component/CardAboutComponent';
 const About = () => {
   return (
     <>
-      <div className="flex items-center justify-center w-full h-full mt-24 gap-10">
+      <div className="flex flex-col xl:flex-row items-center justify-center w-full h-full mt-24 gap-10">
         <CardAboutComponent
           name="Ricky Ramadani"
           birthday="5 Januari 1999"
